@@ -1431,7 +1431,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     processWorkbook(arr.buffer);
   },100);
 });
-
+<body>
+  <script>
+    const pwd = prompt("Contraseña:");
+    if (pwd !== "comisiones0426") {
+      document.body.innerHTML = "<h2 style='font-family:sans-serif;padding:2rem'>Acceso denegado ❌</h2>";
+    }
+  </script>
 const PREV_DIFF = {};
 </script>
 </body>
